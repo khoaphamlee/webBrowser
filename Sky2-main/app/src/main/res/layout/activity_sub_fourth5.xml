@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/method"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/web_back_11"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:onClick="imageClick_sub_fourth_5"
+            android:src="@drawable/ic_back"
+            android:tint="?attr/colorOnSurface" />
+
+        <TextView
+            android:id="@+id/textMethod"
+            android:layout_width="3000dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/web_back_11"
+
+            android:text="Hình thức"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/method"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tab_view_1"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar5"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/tab"
+            android:src="@drawable/tab"
+            android:layout_centerVertical="true"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Quay số nhanh"
+
+            android:id="@+id/text_tab"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/tab"
+            android:layout_marginStart="25dp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_quaysonhanh"
+            android:layout_marginLeft="65dp"
+
+            android:text="Kích cỡ và phím tắt"
+            android:textSize="13sp"
+            android:layout_below="@id/text_tab"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:id="@+id/switch4"
+            android:layout_toRightOf="@id/text_tab"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tab_view_2"
+        app:layout_constraintTop_toBottomOf="@+id/tab_view_1"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="30dp"
+
+            android:id="@+id/back_tab"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_back_tab"
+            android:layout_toRightOf="@id/back_tab"
+            android:text="Các trang đề xuất"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:id="@+id/switch5"
+            android:layout_toRightOf="@id/text_back_tab"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_back_tab_2"
+            android:text="Dựa trên các mục có sẵn"
+            android:layout_below="@id/text_back_tab"
+
+            android:textSize="13sp"
+            android:layout_marginLeft="65dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tab_view_3"
+        app:layout_constraintTop_toBottomOf="@+id/tab_view_2"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/search_tab"
+            android:layout_marginLeft="15dp"
+
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/text_search_tab"
+            android:layout_toRightOf="@id/search_tab"
+            android:text="Thanh địa chỉ"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="17sp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/pos"
+            android:text="Hiển thị"
+            android:layout_below="@id/text_search_tab"
+
+            android:textSize="13sp"
+            android:layout_marginLeft="65dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

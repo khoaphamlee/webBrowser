@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/web_back_5"
+            android:text="Cài đặt"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="25sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/web_back_5"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="imageClick_fourth"
+            android:src="@drawable/ic_back"
+            android:tint="?attr/colorOnSurface" />
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/progress_bar_5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/layout_setting"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

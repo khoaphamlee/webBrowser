@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sub_fourth_2">
+
+    <RelativeLayout
+        android:id="@+id/method"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/web_back_6"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:tint="?attr/colorOnSurface"
+            android:onClick="imageClick_sub_fourth_2"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textTheme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_toRightOf="@+id/web_back_6"
+
+            android:text="Themes"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/radio"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/method">
+
+        <RadioGroup
+            android:id="@+id/idgroupthemes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+
+                android:text="Tùy chọn mặc định của hệ thống"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="72dp"
+                tools:text="Tùy chọn mặc định của hệ thống" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton"
+
+                android:text="Bật giao diện tối khi Trình tiết kiệm pin hoặc giao diện tối trên thiết bị đang bật"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="120dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton8"
+                android:checked="false"
+
+                android:text="Tối"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="240dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:checked="false"
+
+                android:text="Sáng"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="181dp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
