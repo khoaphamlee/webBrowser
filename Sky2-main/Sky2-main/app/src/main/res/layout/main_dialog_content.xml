@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_content.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_circle" />
+
+    <ImageButton
+        android:id="@+id/historyBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/history" />
+
+    <ImageButton
+        android:id="@+id/forwardBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintEnd_toStartOf="@+id/homeBtn"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toEndOf="@+id/historyBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_forward" />
+
+    <ImageButton
+        android:id="@+id/tabBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tab" />
+
+    <ImageButton
+        android:id="@+id/bookmarkBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tabBtn"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toEndOf="@+id/settingBtn"
+        app:layout_constraintTop_toBottomOf="@+id/forwardBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <ImageButton
+        android:id="@+id/settingBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <ImageButton
+
+        android:id="@+id/anonyBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/incognito" />
+
+    <ImageButton
+
+        android:id="@+id/qrBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookmarkBtn"
+        app:srcCompat="@drawable/scan_helper" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabBtn"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/magnify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
